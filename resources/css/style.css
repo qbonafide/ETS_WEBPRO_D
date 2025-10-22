@@ -1,0 +1,268 @@
+/* === GLOBAL BASE === */
+body {
+    background-color: #f6f0ea;
+    font-family: "Poppins", sans-serif;
+    color: #4b1f0e;
+}
+
+/* === NAVBAR === */
+nav {
+    background-color: #f6f0ea !important;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #4b1f0e !important;
+}
+
+.navbar-nav .nav-link {
+    color: #4b1f0e !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a0522d !important;
+    border-bottom: 3px solid #a0522d;
+}
+
+/* === Sticky Navbar === */
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f6f0ea !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-toggler {
+    background-color: #4a2c2a !important;
+    border: none;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* === PROFILE SECTION === */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-icon {
+    background-color: #4b1f0e;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+    background-color: #a0522d;
+}
+
+.profile-name {
+    color: #4b1f0e;
+    font-weight: 700;
+}
+
+/* === RESPONSIVENESS === */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .profile-section {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* === BUTTONS GLOBAL === */
+.btn-brown {
+    background-color: #4b1f0e;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn-brown:hover {
+    background-color: #6b2f1b;
+    color: white;
+}
+
+.btn-outline-brown {
+    border: 2px solid #4b1f0e;
+    color: #4b1f0e;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn-outline-brown:hover {
+    background-color: #4b1f0e;
+    color: white !important;
+}
+
+/* === BOOKING PAGE === */
+.booking-page {
+    background-color: #f2e9e4;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.booking-page h3 {
+    color: #432818;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* === CARD BOOKING === */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-title {
+    color: #7f5539;
+    font-weight: 600;
+}
+
+.btn-book {
+    background-color: #432818;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 8px 25px;
+    border: none;
+}
+.btn-book:hover {
+    background-color: #7f5539;
+}
+
+/* === INDIVIDUAL PAGE === */
+.text-brown {
+    color: #4b1f0e;
+}
+.border-brown {
+    border-color: #4b1f0e !important;
+}
+
+.booking-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease-in-out;
+}
+.booking-image:hover {
+    transform: scale(1.02);
+}
+
+/* SEAT BUTTONS */
+.seat-btn {
+    margin: 5px;
+    padding: 10px 18px;
+    border: 2px solid #4b1f0e;
+    background-color: transparent;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #4b1f0e;
+    transition: all 0.2s;
+}
+.seat-btn.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+.seat-btn:hover {
+    background-color: #4b1f0e;
+    color: white;
+}
+
+form.text-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-brown {
+    background-color: #4b1f0e;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-brown:hover {
+    background-color: #6b2f1b;
+}
+
+/* === FIXED TIME PAGE LAYOUT === */
+.time-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 25px; /* lebih renggang antar baris & kolom */
+    justify-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.time-btn {
+    width: 130px;
+    padding: 10px 15px;
+    border: 2px solid #4b1f0e;
+    background-color: transparent;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #4b1f0e;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.time-btn.active {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+.time-btn:hover {
+    background-color: #4b1f0e;
+    color: #fff;
+}
+
+/* === PAYMENT PAGE === */
+.payment-page {
+    background-color: #fff;
+}
+.payment-page .card {
+    background-color: #fdf9f6;
+}
+.payment-page .text-brown {
+    color: #4b1f0e;
+}
+.payment-page .btn-brown:hover {
+    background-color: #6e3016;
+}
