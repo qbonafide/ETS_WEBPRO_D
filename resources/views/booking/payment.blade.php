@@ -10,7 +10,7 @@
     <div class="row justify-content-center align-items-center">
         <div class="col-md-5 text-center">
             <h2 class="fw-bold text-brown mb-4">ITStudy</h2>
-            <img src="{{ Vite::asset('resources/img/payment/qr-code.png') }}" alt="Payment QR" class="img-fluid mb-3" style="max-width: 250px;">
+            <img src="{{ asset('img/payment/qr-code.png') }}" alt="Payment QR" class="img-fluid mb-3" style="max-width: 250px;">
             <p class="text-muted small">Upload your payment proof and wait for confirmation.</p>
 
             <form action="{{ route('booking.payment.upload') }}" method="POST" enctype="multipart/form-data" class="mt-3">

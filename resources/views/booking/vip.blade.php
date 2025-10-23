@@ -14,7 +14,7 @@
         <div class="row align-items-center">
             {{-- Gambar --}}
             <div class="col-md-4 text-center">
-                <img src="{{ Vite::asset('resources/img/booking/vip-room.jpg') }}"
+                <img src="{{ asset('img/booking/vip-room.jpg') }}"
                      alt="VIP Room"
                      class="img-fluid rounded shadow-sm mb-3 booking-image">
 

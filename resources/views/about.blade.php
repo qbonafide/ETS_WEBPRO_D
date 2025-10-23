@@ -20,7 +20,7 @@
     </p>
 
   <div class="text-center mt-4">
-    <img src="{{ Vite::asset('resources/img/about-us/about-us-page.jpg') }}" 
+    <img src="{{ asset('img/about-us/about-us-page.jpg') }}" 
          alt="About ITStudy" 
          class="img-fluid rounded-3 shadow-sm" 
          style="max-width: 600px; height: auto;">
@@ -104,7 +104,7 @@
 }
 
 .about-hero {
-  background-image: url("{{ Vite::asset('resources/img/about-us/ITStusy-bg.jpg') }}");
+  background-image: url("{{ asset('img/about-us/ITStusy-bg.jpg') }}");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

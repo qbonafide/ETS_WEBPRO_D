@@ -12,7 +12,7 @@
     <div class="row justify-content-center g-4">
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ Vite::asset('resources/img/booking/individual-desk.jpg') }}" alt="Individual Desk">
+                <img src="{{ asset('img/booking/individual-desk.jpg') }}" alt="Individual Desk">
                 <div class="card-body">
                     <h5 class="card-title">Individual Desk</h5>
                     <a href="{{ route('booking.individual') }}" class="btn btn-book">Booking Now</a>
@@ -22,7 +22,7 @@
 
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ Vite::asset('resources/img/booking/group-desk.jpg') }}" alt="Group Desk">
+                <img src="{{ asset('img/booking/group-desk.jpg') }}" alt="Group Desk">
                 <div class="card-body">
                     <h5 class="card-title">Group Desk</h5>
                     <a href="{{ route('booking.group') }}" class="btn btn-book">Booking Now</a>
@@ -32,7 +32,7 @@
 
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ Vite::asset('resources/img/booking/vip-room.jpg') }}" alt="VIP Room">
+                <img src="{{ asset('img/booking/vip-room.jpg') }}" alt="VIP Room">
                 <div class="card-body">
                     <h5 class="card-title">VIP Room</h5>
                         <a href="{{ route('booking.vip') }}" class="btn btn-book">Booking Now</a>

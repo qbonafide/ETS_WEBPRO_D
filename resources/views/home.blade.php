@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="hero-section d-flex align-items-center" 
-     style="background: url('{{ Vite::asset('resources/img/landing-page/building.png') }}') no-repeat center center/cover; height: 100vh;">
+     style="background: url('{{ asset('img/landing-page/building.png') }}') no-repeat center center/cover; height: 100vh;">
 
   <div class="container text-end">
     <div class="row justify-content-end">
@@ -27,7 +27,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-flexiblehour.jpg') }}" alt="Flexible Booking" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-flexiblehour.jpg') }}" alt="Flexible Booking" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Flexible Hourly Booking</h5>
         <p>Book your study space for exactly how long you need.</p>
@@ -37,7 +37,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-comfortmeets.jpg') }}" alt="Comfort Meets Productivity" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-comfortmeets.jpg') }}" alt="Comfort Meets Productivity" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Comfort Meets Productivity</h5>
         <p>Designed for focus — private booths or group tables ready for you.</p>
@@ -47,7 +47,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-easyonline.jpg') }}" alt="Easy Online Reservation" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-easyonline.jpg') }}" alt="Easy Online Reservation" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Easy Online Reservation</h5>
         <p>Book anytime, anywhere, directly through our website.</p>
@@ -59,7 +59,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-groupsolooption.jpg') }}" alt="Group & Solo Options" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-groupsolooption.jpg') }}" alt="Group & Solo Options" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Group & Solo Options</h5>
         <p>From quiet zones to collaborative rooms — ITStudy fits your style.</p>
@@ -69,7 +69,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-affordable.jpg') }}" alt="Affordable for Students" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-affordable.jpg') }}" alt="Affordable for Students" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Affordable for Students</h5>
         <p>Transparent pricing with student-friendly rates.</p>
@@ -79,7 +79,7 @@
     <div class="col-md-4">
       <div class="feature-card">
         <div class="feature-img-wrapper">
-          <img src="{{ Vite::asset('resources/img/landing-page/grid-facilities.jpg') }}" alt="Facilities That Keep You Going" class="feature-img mb-3">
+          <img src="{{ asset('img/landing-page/grid-facilities.jpg') }}" alt="Facilities That Keep You Going" class="feature-img mb-3">
         </div>
         <h5 class="fw-bold">Facilities That Keep You Going</h5>
         <p>Wi-Fi, charging ports, and coffee corner — everything you need.</p>
@@ -97,7 +97,7 @@
     </div>
 
     <div class="col-md-6 text-center">
-      <img src="{{ Vite::asset('resources/img/landing-page/read-book.png') }}" 
+      <img src="{{ asset('img/landing-page/read-book.png') }}" 
            alt="CTA Illustration" 
            class="img-fluid rounded-3" 
            style="max-width: 400px; height: auto;">

@@ -16,7 +16,7 @@
         <div class="row align-items-center">
             {{-- Kolom kiri: gambar + harga --}}
             <div class="col-md-4 text-center">
-                <img src="{{ Vite::asset('resources/img/booking/individual-desk.jpg') }}" 
+                <img src="{{ asset('img/booking/individual-desk.jpg') }}" 
                      alt="Individual Desk"
                      class="img-fluid rounded shadow-sm mb-3 booking-image">
 

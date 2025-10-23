@@ -18,15 +18,15 @@
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
                 @if ($data['room_type'] === 'Group Desk')
-                    <img src="{{ Vite::asset('resources/img/booking/group-desk.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
+                    <img src="{{ asset('img/booking/group-desk.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
                     <h6 class="fw-semibold text-brown">{{ $data['desk_number'] }}</h6>
                     <p class="fw-bold text-brown mb-0">Rp35.000/hour (10 desks)</p>
                 @elseif ($data['room_type'] === 'VIP Room')
-                    <img src="{{ Vite::asset('resources/img/booking/vip-room.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
+                    <img src="{{ asset('img/booking/vip-room.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
                     <h6 class="fw-semibold text-brown">{{ $data['desk_number'] }}</h6>
                     <p class="fw-bold text-brown mb-0">Rp50.000/hour (Private)</p>
                 @else
-                    <img src="{{ Vite::asset('resources/img/booking/individual-desk.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
+                    <img src="{{ asset('img/booking/individual-desk.jpg') }}" class="img-fluid rounded shadow-sm mb-3" style="max-height:400px;object-fit:cover;">
                     <h6 class="fw-semibold text-brown">{{ $data['desk_number'] }}</h6>
                     <p class="fw-bold text-brown mb-0">Rp4.000/hour (Individual)</p>
                 @endif
