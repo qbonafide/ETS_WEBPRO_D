@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@vite(['resources/css/style.css', 'resources/js/app.js'])
 
 @section('content')
 <div class="container my-5">
@@ -9,12 +8,14 @@
         <div class="alert alert-success text-center rounded-pill">{{ session('success') }}</div>
     @endif
 
+    {{-- ✅ Jika belum ada reservasi --}}
     @if ($reservations->isEmpty())
         <div class="text-center my-5">
             <p class="text-muted mb-3">You don’t have any reservations yet.</p>
             <a href="{{ route('booking') }}" class="btn btn-brown rounded-pill px-4">Make a Reservation</a>
         </div>
     @else
+        {{-- ✅ Daftar reservasi --}}
         @foreach ($reservations as $r)
             <div class="card shadow-sm border-0 mb-4" style="background:#fdf9f6;">
                 <div class="card-body p-4">
@@ -23,6 +24,7 @@
                         <span class="badge bg-success">Confirmed</span>
                     </div>
 
+                    {{-- ✅ Tabel detail reservasi --}}
                     <div class="table-responsive">
                         <table class="table table-bordered mb-0">
                             <tbody>
@@ -30,7 +32,7 @@
                                     <th style="width:220px;background:#f6e9df;">Room Type</th>
                                     <td>
                                         @php
-                                            $roomName = match($r->room_id){
+                                            $roomName = match($r->room_id) {
                                                 1 => 'Individual Desk',
                                                 2 => 'Group Desk',
                                                 3 => 'VIP Room',
@@ -64,6 +66,7 @@
                         </table>
                     </div>
 
+                    {{-- ✅ Tombol aksi --}}
                     <div class="d-flex gap-3 justify-content-center mt-4">
                         <form action="{{ route('reservation.cancel', $r->id) }}" method="POST">
                             @csrf
@@ -84,8 +87,16 @@
     @endif
 </div>
 
+{{-- ✅ Style khusus halaman ini --}}
+@push('styles')
 <style>
-.btn-brown{ background:#4b2c20; color:#fff; }
-.btn-brown:hover{ background:#3a2117; }
+    .btn-brown {
+        background:#4b2c20;
+        color:#fff;
+    }
+    .btn-brown:hover {
+        background:#3a2117;
+    }
 </style>
+@endpush
 @endsection

@@ -1,9 +1,9 @@
+{{-- resources/views/home.blade.php --}}
 @extends('layouts.app')
 
 @section('content')
 <div class="hero-section d-flex align-items-center" 
      style="background: url('{{ asset('img/landing-page/building.png') }}') no-repeat center center/cover; height: 100vh;">
-
   <div class="container text-end">
     <div class="row justify-content-end">
       <div class="col-md-6">
@@ -104,9 +104,12 @@
     </div>
   </div>
 </section>
+@endsection
 
+@push('styles')
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
   body {
     font-family: 'Poppins', sans-serif;
   }
@@ -116,6 +119,7 @@
     font-size: 3.5rem;
     line-height: 1.2;
   }
+
   .hero-subtitle {
     color: #6c757d;
     max-width: 500px;
@@ -172,9 +176,9 @@
     border-radius: 8px;
     transition: 0.3s;
   }
+
   .btn-book:hover {
     background-color: #693b38;
   }
 </style>
-
-@endsection
+@endpush
